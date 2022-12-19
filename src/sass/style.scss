@@ -1,9 +1,18 @@
+//Base
 @import "base/reset";
 
+//Abstracts
 @import "abstracts/variables";
 
+//Components
+@import "components/buttons";
 
-body {
-    background-color: rgb(196, 116, 116);
+//Layout
+@import "layout/wrapper";
+@import "layout/header";
+
+
+// body {
+//     background-color: rgb(196, 116, 116);
     
-}
+// }
