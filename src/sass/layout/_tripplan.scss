@@ -1,0 +1,67 @@
+.tripplan{
+    // background-image: url(/src/img/header_background.svg);
+    margin-top: 32px;
+    
+    .tripplan__block{
+        max-width: 892px;        
+        .tripplan__title{
+            font-family: 'Aleo';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 80px;
+            line-height: 96px;
+    
+            color: $color-tripplan-title;
+        }
+        .tripplan__text{
+            margin: 50px 0 46px 0;
+
+            font-family: 'Aleo';
+            font-style: italic;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+
+            color: $color-tripplan-text;
+        }
+        .tripplan__search{
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 16px;
+            padding: 18px 18px 18px 41px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .tripplan__input{
+                .form-input{
+                    font-family: 'Aleo';
+                    font-style: italic;
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 29px;
+
+                    color: $color-primary;
+
+                    border: none;                    
+                }                
+            }
+            .form-button{
+                padding: 13.5px 32.5px;
+                .form-link{
+                    text-decoration: none;
+
+                    font-family: 'Red Hat Text';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 32px;
+
+                    color: #FFFFFF;
+
+                    
+                }
+            }
+        }
+    }
+    
+}

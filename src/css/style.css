@@ -128,8 +128,7 @@ dfn {
  * contexts in Firefox 4+, Safari, and Chrome.
  */
 h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
+  margin: 0;
 }
 
 /**
@@ -330,6 +329,7 @@ input[type=number]::-webkit-outer-spin-button {
 input[type=search] {
   -webkit-appearance: textfield; /* 1 */
   box-sizing: content-box; /* 2 */
+  padding: 0;
 }
 
 /**
@@ -406,12 +406,6 @@ ul {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
   border-radius: 10px;
   border: none;
-  padding: 10px 30px;
-  font-family: "Red Hat Text";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 21px;
   color: #FFFFFF;
 }
 
@@ -420,17 +414,19 @@ ul {
   margin: auto;
 }
 
-.header__wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+header {
   background: rgba(242, 120, 92, 0.7);
   box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
 }
-.header__wrapper .navigation__list {
+header .header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header__wrapper .navigation__list {
   display: flex;
 }
-.header__wrapper .navigation__list .list__item {
+header .header__wrapper .navigation__list .list__item {
   font-family: "Red Hat Text";
   font-style: normal;
   font-weight: 500;
@@ -438,16 +434,84 @@ ul {
   line-height: 21px;
   margin-right: 42px;
 }
-.header__wrapper .navigation__list .list__item .list__link {
+header .header__wrapper .navigation__list .list__item .list__link {
   text-decoration: none;
   color: #FFFFFF;
 }
-.header__wrapper .navigation__list .list__item:last-child {
+header .header__wrapper .navigation__list .list__item:last-child {
   margin-right: 0;
 }
-.header__wrapper .header__button {
+header .header__wrapper .header__button {
   margin-top: 25px;
   margin-bottom: 24px;
+}
+header .header__wrapper .header__button button {
+  padding: 10px 30px;
+  font-family: "Red Hat Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.tripplan {
+  margin-top: 32px;
+}
+.tripplan .tripplan__block {
+  max-width: 892px;
+}
+.tripplan .tripplan__block .tripplan__title {
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 96px;
+  color: #FFFFFF;
+}
+.tripplan .tripplan__block .tripplan__text {
+  margin: 50px 0 46px 0;
+  font-family: "Aleo";
+  font-style: italic;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+.tripplan .tripplan__block .tripplan__search {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 16px;
+  padding: 18px 18px 18px 41px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tripplan .tripplan__block .tripplan__search .tripplan__input .form-input {
+  font-family: "Aleo";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: rgb(242, 120, 92);
+  border: none;
+}
+.tripplan .tripplan__block .tripplan__search .form-button {
+  padding: 13.5px 32.5px;
+}
+.tripplan .tripplan__block .tripplan__search .form-button .form-link {
+  text-decoration: none;
+  font-family: "Red Hat Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+
+body {
+  background-image: url(/src/img/header_background.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-color: rgb(196, 116, 116);
 }
 
 /*# sourceMappingURL=style.css.map */

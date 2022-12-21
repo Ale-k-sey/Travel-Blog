@@ -10,9 +10,15 @@
 //Layout
 @import "layout/wrapper";
 @import "layout/header";
+@import "layout/tripplan";
 
 
-// body {
-//     background-color: rgb(196, 116, 116);
+body {
     
-// }
+    background-image: url(/src/img/header_background.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+
+    background-color: rgb(196, 116, 116);
+    
+}
