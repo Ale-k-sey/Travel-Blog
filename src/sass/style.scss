@@ -20,5 +20,8 @@ body {
     background-position: top center;
 
     background-color: rgb(196, 116, 116);
-    
+
+    @media screen and (max-width: $mobile-width){
+        background-image: url(../img/header_background-mobile.svg);
+    }
 }

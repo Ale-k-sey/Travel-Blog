@@ -5,6 +5,9 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        .header__logo-mob{
+            display: none;
+        }
         .navigation__list{
             display: flex;
             .list__item{
@@ -23,6 +26,9 @@ header {
             .list__item:last-child{
                 margin-right: 0;
             }
+        }
+        .header__burger{
+            display: none;
         }
         .header__button{
             margin-top: 25px;
@@ -44,3 +50,38 @@ header {
 }
 
 
+@media screen and (max-width: $tablet-width) {
+    header{
+        .header__wrapper{
+            padding-top: 5px;
+            padding-bottom: 5px;
+            .header__burger{
+                display: block;
+            }
+            .header__button{
+                display: none;
+            }
+            .header__navigation{
+                display: none;
+            }
+        } 
+    }  
+}
+
+@media screen and (max-width: $mobile-width) {
+    header{
+        background: none;
+        box-shadow: none;
+
+        padding-top: 43px;
+        .header__wrapper{
+            .header__logo{
+                display: none;
+            }
+            .header__logo-mob{
+                display: block;
+            }
+        }
+        
+    }
+}

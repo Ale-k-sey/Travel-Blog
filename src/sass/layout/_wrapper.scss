@@ -1,4 +1,10 @@
 .wrapper {
     max-width: $content_width;
     margin: auto;
+    padding: 0 1px;
+    @media screen and (max-width: $tablet-width) {
+        padding: 0 15px;        
+    }
 }
+
+
