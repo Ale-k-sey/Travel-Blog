@@ -486,6 +486,7 @@ header .header__wrapper .header__button button {
   align-items: center;
 }
 .tripplan .tripplan__block .tripplan__search .tripplan__input .form-input {
+  width: 560px;
   font-family: "Aleo";
   font-style: italic;
   font-weight: 400;
@@ -493,6 +494,10 @@ header .header__wrapper .header__button button {
   line-height: 29px;
   color: rgb(242, 120, 92);
   border: none;
+  background-color: rgba(255, 255, 255, 0);
+}
+.tripplan .tripplan__block .tripplan__search .tripplan__input .form-input:focus {
+  outline: none;
 }
 .tripplan .tripplan__block .tripplan__search .form-button {
   padding: 13.5px 32.5px;
@@ -508,7 +513,7 @@ header .header__wrapper .header__button button {
 }
 
 body {
-  background-image: url(/src/img/header_background.svg);
+  background-image: url(../img/header_background.svg);
   background-repeat: no-repeat;
   background-position: top center;
   background-color: rgb(196, 116, 116);
