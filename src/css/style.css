@@ -577,6 +577,48 @@ header .header__wrapper .header__button button {
     line-height: 15px;
   }
 }
+.steps {
+  margin-top: 334px;
+}
+.steps .steps__title {
+  font-family: "Red Hat Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 53px;
+  text-align: center;
+  color: rgb(242, 120, 92);
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+.steps .steps__cards {
+  display: flex;
+  justify-content: center;
+}
+.steps .steps__cards .steps__item .steps__ico {
+  display: block;
+  margin: 0 auto 30px;
+}
+.steps .steps__cards .steps__item .ico-fix {
+  margin-bottom: 22px;
+}
+.steps .steps__cards .steps__item .steps__text {
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgb(13, 96, 111);
+  display: block;
+  margin: 0 auto;
+}
+.steps .steps__cards .steps__item:first-child {
+  margin-right: 231px;
+}
+.steps .steps__cards .steps__item:last-child {
+  margin-left: 160px;
+}
+
 body {
   background-image: url(../img/header_background.svg);
   background-repeat: no-repeat;
