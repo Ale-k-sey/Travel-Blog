@@ -592,8 +592,9 @@ header .header__wrapper .header__button button {
   margin-bottom: 40px;
 }
 .steps .steps__cards {
+  max-width: 1177px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 .steps .steps__cards .steps__item .steps__ico {
   display: block;
@@ -602,6 +603,9 @@ header .header__wrapper .header__button button {
 .steps .steps__cards .steps__item .ico-fix {
   margin-bottom: 22px;
 }
+.steps .steps__cards .steps__item .steps__ico-mob {
+  display: none;
+}
 .steps .steps__cards .steps__item .steps__text {
   font-family: "Aleo";
   font-style: normal;
@@ -609,16 +613,46 @@ header .header__wrapper .header__button button {
   font-size: 20px;
   line-height: 24px;
   color: rgb(13, 96, 111);
-  display: block;
-  margin: 0 auto;
+  text-align: center;
 }
 .steps .steps__cards .steps__item:first-child {
-  margin-right: 231px;
-}
-.steps .steps__cards .steps__item:last-child {
-  margin-left: 160px;
+  margin-right: 45px;
 }
 
+@media screen and (max-width: 390px) {
+  .steps {
+    margin-top: 81px;
+  }
+  .steps .steps__title {
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 20px;
+  }
+  .steps .steps__cards .steps__item {
+    max-width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .steps .steps__cards .steps__item .steps__ico {
+    display: none;
+  }
+  .steps .steps__cards .steps__item .steps__ico-mob {
+    display: block;
+    margin-bottom: 19px;
+  }
+  .steps .steps__cards .steps__item .ico-fix {
+    margin-bottom: 22px;
+  }
+  .steps .steps__cards .steps__item .steps__text {
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+  }
+  .steps .steps__cards .steps__item:first-child {
+    margin-right: 0;
+  }
+}
 body {
   background-image: url(../img/header_background.svg);
   background-repeat: no-repeat;

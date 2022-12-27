@@ -15,8 +15,9 @@
         margin-bottom: 40px;
     }
     .steps__cards{
+        max-width: 1177px;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         .steps__item{            
            .steps__ico{
                 display: block;
@@ -24,6 +25,9 @@
            } 
            .ico-fix{
             margin-bottom: 22px;
+           }
+           .steps__ico-mob{
+            display: none;
            }
            .steps__text{
                 font-family: 'Aleo';
@@ -34,15 +38,60 @@
 
                 color: $color-secondary;
 
-                display: block;
-                margin: 0 auto;
+                text-align: center;
            }
            &:first-child{
-            margin-right: 231px;
+            margin-right: 45px;
            }
-           &:last-child{
-            margin-left: 160px;
-           }
+        //    &:last-child{
+        //     margin-left: 160px;
+        //    }
+        }
+    }
+}
+
+@media screen and (max-width: $mobile-width) {
+    .steps{
+        margin-top: 81px;        
+        .steps__title{
+            
+            font-size: 14px;
+            line-height: 19px;
+
+            margin-bottom: 20px;
+        }
+        .steps__cards{ 
+            // justify-content: stretch;           
+            .steps__item{ 
+                max-width: 100px;
+                display: flex;
+                flex-direction: column;
+                // justify-content: center; 
+                align-items: center;
+                .steps__ico{
+                    display: none;
+                }          
+               .steps__ico-mob{
+                    display: block;
+                    // margin: 0 auto 19px;
+                    margin-bottom: 19px;
+               } 
+               .ico-fix{
+                margin-bottom: 22px;
+               }
+               .steps__text{                    
+                    font-size: 10px;
+                    line-height: 12px; 
+                    
+                    text-align: center;
+               }
+               &:first-child{
+                margin-right: 0;
+               }
+            //    &:last-child{
+            //     margin-left: 75px;
+            //    }
+            }
         }
     }
 }
