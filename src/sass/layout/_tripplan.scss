@@ -35,7 +35,7 @@
             .tripplan__input{
                 
                 .form-input{                    
-                    width: 560px;
+                    width: 300px;
 
                     font-family: 'Aleo';
                     font-style: italic;
@@ -72,4 +72,38 @@
         }
     }
     
+}
+
+@media screen and (max-width: $mobile-width){
+    .tripplan{
+        .tripplan__block{
+            .tripplan__title{
+                display: none;
+            }
+            .tripplan__text{
+                display: none;
+            }
+            .tripplan__search{
+                padding: 9px 9px 9px 16.5px;
+                .tripplan__input{
+                    .form-input{
+                        width: 220px;
+
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 17px;
+                    }
+                }
+                .form-button{
+                    padding: 7.5px 9px;
+                    .form-link{
+                        font-weight: 500;
+                        font-size: 11px;
+                        line-height: 15px;
+                    }
+                }
+            }
+        }
+    }
+        
 }
