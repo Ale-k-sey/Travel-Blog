@@ -563,7 +563,7 @@ header .header__wrapper .header__button button {
     padding: 9px 9px 9px 16.5px;
   }
   .tripplan .tripplan__block .tripplan__search .tripplan__input .form-input {
-    width: 200px;
+    width: 165px;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
@@ -653,6 +653,84 @@ header .header__wrapper .header__button button {
     margin-right: 0;
   }
 }
+.destinations .destinations__title {
+  margin: 0 0 16px 0;
+  text-align: center;
+  font-family: "Red Hat Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 53px;
+  color: rgb(242, 120, 92);
+}
+.destinations .destinations__carousel {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.destinations .destinations__carousel .item__center {
+  margin-right: 60px;
+  margin-left: 60px;
+}
+.destinations .destinations__carousel .carousel__item {
+  position: relative;
+}
+.destinations .destinations__carousel .carousel__item .carousel__text {
+  display: inline;
+  font-family: "Red Hat Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 42px;
+  color: #FFFFFF;
+  margin: 0;
+  position: absolute;
+  left: 15px;
+  top: 718px;
+}
+.destinations .destinations__control {
+  display: flex;
+  justify-content: center;
+}
+.destinations .destinations__control .control__circle {
+  margin-top: 24px;
+  margin-bottom: 40px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background: rgba(242, 120, 92, 0.5);
+}
+.destinations .destinations__control .circle__center {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.destinations .destinations-button {
+  display: block;
+  margin: 0 auto;
+  padding: 13.5px 31px 13.5px 81px;
+}
+.destinations .destinations-button .destinations-link {
+  font-family: "Red Hat Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #FFFFFF;
+  text-decoration: none;
+  position: relative;
+}
+.destinations .destinations-button .destinations-link::before {
+  content: url(/src/img/button_arrow-right.svg);
+  position: absolute;
+  left: -50px;
+  top: -6px;
+}
+
+.destinations__wrapper {
+  max-width: 1440px;
+}
+
 body {
   background-image: url(../img/header_background.svg);
   background-repeat: no-repeat;

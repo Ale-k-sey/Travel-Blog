@@ -1,0 +1,89 @@
+.destinations{
+    .destinations__title{
+        margin: 0 0 16px 0;
+
+        text-align: center;
+        font-family: 'Red Hat Text';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 53px;
+
+        color: $color-primary;        
+    }
+    .destinations__carousel{
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        .item__center{
+            margin-right: 60px;
+            margin-left: 60px;
+        }
+        .carousel__item{  
+            position: relative;          
+            .carousel__text{
+                display: inline;
+    
+                font-family: 'Red Hat Text';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 32px;
+                line-height: 42px;
+    
+                color: #FFFFFF;
+    
+                margin: 0;
+                
+                position: absolute;
+                left: 15px;
+                top: 718px;
+            }
+        }        
+    }
+    .destinations__control{
+        display: flex;
+        justify-content: center;
+        .control__circle{
+            margin-top: 24px;
+            margin-bottom: 40px;
+
+            width: 20px;
+            height: 20px;
+
+            border-radius: 50%;
+            border: 1px solid black;
+            background: rgba(242, 120, 92, 0.5);
+        }
+        .circle__center{
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    }
+    .destinations-button{
+        display: block;
+        margin: 0 auto;
+        padding: 13.5px 31px 13.5px 81px;
+        .destinations-link{
+            font-family: 'Red Hat Text';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 32px;
+
+            color: #FFFFFF;
+
+            text-decoration: none;
+            position: relative;
+            &::before{
+                content: url(/src/img/button_arrow-right.svg);
+                position: absolute;
+                left: -50px;
+                top: -6px;
+            }            
+        }
+    }
+}
+
+.destinations__wrapper{
+    max-width: 1440px;
+}
