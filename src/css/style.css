@@ -645,6 +645,7 @@ header .header__wrapper .header__button button {
     margin-bottom: 22px;
   }
   .steps .steps__cards .steps__item .steps__text {
+    margin: 0;
     font-size: 10px;
     line-height: 12px;
     text-align: center;
@@ -687,6 +688,9 @@ header .header__wrapper .header__button button {
   position: absolute;
   left: 15px;
   top: 718px;
+}
+.destinations .destinations__carousel-mob {
+  display: none;
 }
 .destinations .destinations__control {
   display: flex;
@@ -731,6 +735,93 @@ header .header__wrapper .header__button button {
   max-width: 1440px;
 }
 
+@media screen and (max-width: 390px) {
+  .destinations .destinations__title {
+    margin: 20px 0 20px 0;
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .destinations .destinations__carousel {
+    display: none;
+  }
+  .destinations .destinations__carousel-mob {
+    display: flex;
+    position: relative;
+  }
+  .destinations .destinations__carousel-mob .carousel-mob__item {
+    position: relative;
+  }
+  .destinations .destinations__carousel-mob .carousel-mob__item .spain-mob {
+    width: 80%;
+  }
+  .destinations .destinations__carousel-mob .carousel-mob__item .carousel-mob__text {
+    margin: 0;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+    position: absolute;
+    left: 15px;
+    bottom: 176px;
+  }
+  .destinations .destinations__carousel-mob .destinations__control-next {
+    width: 30px;
+    height: 30px;
+    border: 0;
+    border-top: 6px solid rgb(242, 120, 92);
+    border-left: 6px solid rgb(242, 120, 92);
+    border-radius: 3px;
+    position: absolute;
+    top: 50%;
+    transform: translate(15px, -50%) rotate(-45deg);
+  }
+  .destinations .destinations__carousel-mob .destinations__control-prev {
+    width: 30px;
+    height: 30px;
+    border: 0;
+    border-top: 6px solid rgb(242, 120, 92);
+    border-left: 6px solid rgb(242, 120, 92);
+    border-radius: 3px;
+    position: absolute;
+    top: 50%;
+    transform: translate(305px, -50%) rotate(135deg);
+  }
+  .destinations .destinations__control {
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .destinations .destinations__control .control__circle {
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(242, 120, 92, 0.5);
+  }
+  .destinations .destinations__control .circle__center {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .destinations .destinations-button {
+    display: block;
+    margin: 0 auto;
+    padding: 7.5px 12px 7.5px 28px;
+  }
+  .destinations .destinations-button .destinations-link {
+    font-size: 11px;
+    line-height: 15px;
+    position: relative;
+  }
+  .destinations .destinations-button .destinations-link::before {
+    content: url(/src/img/button_arrow-right.svg);
+    position: absolute;
+    transform: scale(25%);
+    left: -32px;
+    top: -14px;
+  }
+}
 body {
   background-image: url(../img/header_background.svg);
   background-repeat: no-repeat;
