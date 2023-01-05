@@ -78,7 +78,7 @@
             text-decoration: none;
             position: relative;
             &::before{
-                content: url(/src/img/button_arrow-right.svg);
+                content: url(img/button_arrow-right.svg);
                 position: absolute;
                 left: -50px;
                 top: -6px;
@@ -130,7 +130,8 @@
                 border: 0;
                 border-top: 6px solid $color-primary;
                 border-left: 6px solid $color-primary;
-                border-radius: 3px;                
+                border-radius: 3px;
+                background: none;                
                 position: absolute;     
                 top: 50%;           
                 transform: translate(15px, -50%) rotate(-45deg);                
@@ -142,6 +143,7 @@
                 border-top: 6px solid $color-primary;
                 border-left: 6px solid $color-primary;
                 border-radius: 3px;
+                background: none;
                 position: absolute;     
                 top: 50%;           
                 transform: translate(305px, -50%) rotate(135deg);
