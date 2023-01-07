@@ -372,7 +372,7 @@ header .header__wrapper .header__button button {
   position: relative;
 }
 .destinations .destinations-button .destinations-link::before {
-  content: url(img/button_arrow-right.svg);
+  content: url(/src/img/button_arrow-right.svg);
   position: absolute;
   left: -50px;
   top: -6px;
@@ -466,7 +466,7 @@ header .header__wrapper .header__button button {
   .destinations .destinations-button .destinations-link::before {
     content: url(/src/img/button_arrow-right.svg);
     position: absolute;
-    transform: scale(25%);
+    transform: scale(30%);
     left: -32px;
     top: -14px;
   }
@@ -489,9 +489,12 @@ header .header__wrapper .header__button button {
   display: flex;
   margin-top: 30px;
 }
-.stories .stories__article .article__img {
+.stories .stories__article .article__img .img-desc {
   max-width: 400px;
   margin-right: 40px;
+}
+.stories .stories__article .article__img .img-mob {
+  display: none;
 }
 .stories .stories__article .article__content .article__title {
   font-family: "Aleo";
@@ -536,6 +539,52 @@ header .header__wrapper .header__button button {
   left: -50px;
 }
 
+@media screen and (max-width: 390px) {
+  .stories {
+    margin-top: 20px;
+  }
+  .stories .stories__title {
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 10px;
+  }
+  .stories .stories__article {
+    margin-top: 15px;
+  }
+  .stories .stories__article .article__img .img-desc {
+    display: none;
+  }
+  .stories .stories__article .article__img .img-mob {
+    display: block;
+    max-width: 155px;
+    margin-right: 10px;
+  }
+  .stories .stories__article .article__content .article__title {
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 13px;
+    margin-bottom: 10px;
+  }
+  .stories .stories__article .article__content .article__text {
+    font-size: 9px;
+    line-height: 11px;
+  }
+  .stories .stories__button {
+    padding: 7.5px 13.5px 7.5px 29.5px;
+    display: block;
+    margin: 0 auto;
+  }
+  .stories .stories__button .stories__link {
+    font-size: 11px;
+    line-height: 15px;
+  }
+  .stories .stories__button .stories__link::before {
+    content: url(/src/img/button_arrow-right.svg);
+    transform: scale(30%);
+    left: -32px;
+    top: -14px;
+  }
+}
 body {
   background-image: url(../img/header_background.svg);
   background-repeat: no-repeat;

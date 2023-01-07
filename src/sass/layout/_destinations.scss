@@ -78,7 +78,7 @@
             text-decoration: none;
             position: relative;
             &::before{
-                content: url(img/button_arrow-right.svg);
+                content: url(/src/img/button_arrow-right.svg);
                 position: absolute;
                 left: -50px;
                 top: -6px;
@@ -183,7 +183,7 @@
                 &::before{
                     content: url(/src/img/button_arrow-right.svg);
                     position: absolute;
-                    transform: scale(25%);
+                    transform: scale(30%);
                     left: -32px;
                     top: -14px;
                 }            
