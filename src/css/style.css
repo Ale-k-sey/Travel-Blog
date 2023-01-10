@@ -542,6 +542,7 @@ header .header__wrapper .header__button button {
 @media screen and (max-width: 390px) {
   .stories {
     margin-top: 20px;
+    padding-bottom: 13px;
   }
   .stories .stories__title {
     font-size: 14px;
@@ -585,15 +586,53 @@ header .header__wrapper .header__button button {
     top: -14px;
   }
 }
+.footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.footer .footer__title {
+  text-align: center;
+  font-family: "Red Hat Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: white;
+  position: relative;
+}
+.footer .footer__title .footer__icons {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.footer .footer__title .footer__icons .youtube__link {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 390px) {
+  .footer {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .footer .footer__title {
+    font-size: 0;
+    line-height: 0;
+  }
+  .footer .footer__title .footer__icons {
+    height: auto;
+    position: static;
+    margin: 0 auto;
+    transform: none;
+  }
+}
 body {
-  background-image: url(../img/header_background.svg);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-color: rgb(196, 116, 116);
+  background: url(../img/header_background.svg) top center no-repeat, url(../img/footer__background.svg) bottom center no-repeat;
 }
 @media screen and (max-width: 390px) {
   body {
-    background-image: url(../img/header_background-mobile.svg);
+    background: url(../img/header_background-mobile.svg) top center no-repeat, url(../img/footer__background-mob.svg) bottom center no-repeat;
   }
 }
 

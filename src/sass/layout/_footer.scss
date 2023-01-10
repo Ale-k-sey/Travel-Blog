@@ -1,0 +1,51 @@
+.footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    // position: relative;
+    .footer__title{
+        text-align: center;
+
+        font-family: 'Red Hat Text';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+
+        color: white;
+
+        position: relative;
+        .footer__icons{
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            .youtube__link{
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: $mobile-width){
+    .footer{
+        padding-top: 16px;
+        padding-bottom: 16px;    
+        
+        .footer__title{
+            font-size: 0;
+            line-height: 0;
+            // position: relative;    
+            .footer__icons{
+                height: auto;
+                position: static;
+                margin: 0 auto;
+                transform: none;
+                              
+            }
+        }
+        
+    }  
+}
