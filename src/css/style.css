@@ -70,6 +70,8 @@ table {
 header {
   background: rgba(242, 120, 92, 0.7);
   box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+  max-width: 1440px;
+  margin: auto;
 }
 header .header__wrapper {
   display: flex;
@@ -315,26 +317,10 @@ header .header__wrapper .header__button button {
   display: flex;
   justify-content: center;
   overflow: hidden;
-}
-.destinations .destinations__carousel .item__center {
-  margin-right: 60px;
-  margin-left: 60px;
-}
-.destinations .destinations__carousel .carousel__item {
   position: relative;
 }
-.destinations .destinations__carousel .carousel__item .carousel__text {
-  display: inline;
-  font-family: "Red Hat Text";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 42px;
-  color: #FFFFFF;
-  margin: 0;
-  position: absolute;
-  left: 15px;
-  top: 718px;
+.destinations .destinations__carousel .img__central {
+  margin: 20px 0;
 }
 .destinations .destinations__carousel-mob {
   display: none;
