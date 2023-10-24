@@ -1,4 +1,4 @@
-html, body, div, span, applet, object, iframe,
+html, body, div, span, applet, object, iframe, button, input,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -113,6 +113,7 @@ header .header__wrapper .header__button button {
   font-weight: 500;
   font-size: 16px;
   line-height: 21px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 860px) {
@@ -143,6 +144,102 @@ header .header__wrapper .header__button button {
     display: block;
   }
 }
+.popup_owerlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 99;
+}
+
+.popup {
+  display: none;
+  width: 560px;
+  padding: 25px 45px;
+  margin: 200px auto;
+  border: 2px solid black;
+  border-radius: 16px;
+  background-color: gray;
+  font-family: "Red Hat Text";
+}
+.popup .popup_title {
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: "Aleo-Bold";
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 38px;
+  color: rgb(13, 96, 111);
+}
+.popup .popup_button,
+.popup .popup_input,
+.popup .popup_forgot-password,
+.popup .popup_footer {
+  text-align: center;
+}
+.popup .popup_input-area,
+.popup .popup_button,
+.popup .popup_button-fb,
+.popup .popup_button-g,
+.popup .popup_button-si {
+  width: 100%;
+}
+.popup .popup_button {
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+  line-height: 25px;
+  cursor: pointer;
+}
+.popup .popup_button .button-text {
+  margin-left: 15px;
+}
+.popup .popup_button-fb {
+  margin-bottom: 20px;
+  color: #FFFFFF;
+  background: #1877F2;
+}
+.popup .popup_button-g {
+  margin-bottom: 30px;
+  color: rgb(13, 96, 111);
+  background: white;
+}
+.popup h2 {
+  margin-bottom: 5px;
+  font-family: "Aleo";
+  line-height: 20px;
+  color: rgb(13, 96, 111);
+}
+.popup .popup_input {
+  height: 54px;
+  width: 100%;
+  border-radius: 10px;
+}
+.popup .input_email {
+  margin-bottom: 20px;
+}
+.popup .input_password {
+  margin-bottom: 25px;
+}
+.popup .popup_button-si {
+  margin-bottom: 10px;
+}
+.popup .popup_forgot-password {
+  display: block;
+  margin: 0 auto 26px;
+  color: rgb(13, 96, 111);
+}
+.popup .popup_footer {
+  margin-top: 20px;
+  color: rgba(13, 96, 111, 0.7);
+}
+.popup .popup_footer .popup_footer-link {
+  color: rgb(13, 96, 111);
+}
+
 .tripplan {
   margin-top: 32px;
 }

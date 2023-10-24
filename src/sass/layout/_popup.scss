@@ -1,0 +1,124 @@
+.popup_owerlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 99;    
+}
+
+.popup{
+    display: none;
+    width: 560px;
+    padding: 25px 45px;
+    margin: 200px auto;
+    border: 2px solid black;
+    border-radius: 16px;
+    
+    background-color: gray;
+
+    font-family: 'Red Hat Text';
+
+    
+
+    .popup_title{
+        margin-bottom: 30px;
+
+        text-align: center;
+        font-family: 'Aleo-Bold';
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 38px;
+        color: $color-secondary;
+    }
+    .popup_button,
+    .popup_input,
+    .popup_forgot-password,
+    .popup_footer{
+        text-align: center;
+    }
+    .popup_input-area,
+    .popup_button,
+    .popup_button-fb,
+    .popup_button-g,
+    .popup_button-si{
+        width: 100%;
+    }
+
+    .popup_button{
+        display: flex;
+        justify-content: center;
+
+        padding: 15px 0;
+        line-height: 25px;
+
+        cursor: pointer;
+
+        .button-text{
+            margin-left: 15px;
+        }
+    }
+    
+    .popup_button-fb{
+        margin-bottom: 20px;       
+
+        color: $color-btn-text;
+        background: $color-popup-facebook;  
+
+        
+    }
+
+    .popup_button-g{
+        margin-bottom: 30px;
+
+        color: $color-secondary;
+        background: white;
+
+        
+    }
+
+    h2{
+        margin-bottom: 5px;
+
+        font-family: 'Aleo';
+        line-height: 20px;
+
+        color: $color-secondary;
+    }
+
+    .popup_input{
+        height: 54px;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .input_email{
+        margin-bottom:  20px;
+    }
+
+    .input_password{
+        margin-bottom: 25px;
+    }
+
+    .popup_button-si{
+        margin-bottom: 10px;
+    }
+
+    .popup_forgot-password{
+        display: block;
+        margin: 0 auto 26px;
+
+        color: $color-secondary;
+    }
+
+    .popup_footer{
+        margin-top: 20px;
+
+        color: rgba(13, 96, 111, 0.7);
+        .popup_footer-link{
+            color: $color-secondary;
+        }
+    }
+}

@@ -1,3 +1,5 @@
+// POPUP
+
 // VARIABLES=====================================================================================
 
 let Next = document.querySelector('.control__next');
@@ -75,3 +77,29 @@ Prew.onclick = prevClick;
 // Center.onclick = () => {
     
 // }
+
+// ====================================
+// Modal Window
+// ====================================
+
+// Variables
+
+let loginButton = document.querySelector('.login_button');
+let popupOwerlay = document.querySelector('.popup_owerlay');
+let popupBlock = document.querySelector('.popup');
+
+// Function
+loginButton.onclick = () => {
+    popupBlock.style.display = 'block';
+    popupOwerlay.style.display = 'block';
+}
+
+popupOwerlay.onclick = function (event) {
+    event.preventDefault()
+    if (event.target == popupOwerlay) {
+        popupBlock.style.display = 'none';
+        popupOwerlay.style.display = 'none';
+    }
+    
+}
+

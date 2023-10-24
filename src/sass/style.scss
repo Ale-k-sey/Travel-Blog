@@ -10,6 +10,7 @@
 //Layout
 @import "layout/wrapper";
 @import "layout/header";
+@import "layout/popup";
 @import "layout/tripplan";
 @import "layout/3steps";
 @import "layout/destinations";
@@ -20,15 +21,7 @@
 body {
     background:
     url(../img/header_background.svg) top center no-repeat,
-    url(../img/footer__background.svg) bottom center no-repeat;
-    // background-image: url(../img/header_background.svg);
-    // background-repeat: no-repeat;
-    // background-position: top center;
-
-    // background-color: rgb(196, 116, 116);
-
-    // background: url(../img/footer__background.svg) bottom center no-repeat;
-    
+    url(../img/footer__background.svg) bottom center no-repeat;    
 
     @media screen and (max-width: $mobile-width){
         background:
