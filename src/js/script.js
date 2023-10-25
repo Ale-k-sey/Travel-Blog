@@ -16,7 +16,7 @@ const destinationsCarousel = document.querySelector('.destinations__carousel');
 
 const createCentralImg = () => {
     const img = document.createElement('img');
-    img.src = '../src/img/' + images[numActivImg];
+    img.src = './img/' + images[numActivImg];
     destinationsCarousel.append(img);
     img.style.marginLeft = 20 + 'px';
 }
@@ -28,7 +28,7 @@ const createRigthlImg = () => {
         numRigthImg = 0;
     }
     const img = document.createElement('img');
-    img.src = '../src/img/' + images[numRigthImg];
+    img.src = './img/' + images[numRigthImg];
     destinationsCarousel.append(img);
     img.style.marginLeft = 20 + 'px';
 }
@@ -42,7 +42,7 @@ const createLeftlImg = () => {
 
     // console.log('numRigthImg:', numRigthImg);
     const img = document.createElement('img');
-    img.src = '../src/img/' + images[numLeftImg];
+    img.src = './img/' + images[numLeftImg];
     destinationsCarousel.prepend(img);
     img.style.marginLeft = 20 + 'px';
 }
