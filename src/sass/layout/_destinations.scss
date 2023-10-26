@@ -60,7 +60,7 @@
             text-decoration: none;
             position: relative;
             &::before{
-                content: url(/src/img/button_arrow-right.svg);
+                content: url(../img/button_arrow-right.svg);
                 position: absolute;
                 left: -50px;
                 top: -6px;

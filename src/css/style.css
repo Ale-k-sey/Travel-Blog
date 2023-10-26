@@ -455,7 +455,7 @@ header .header__wrapper .header__button button {
   position: relative;
 }
 .destinations .destinations-button .destinations-link::before {
-  content: url(/src/img/button_arrow-right.svg);
+  content: url(../img/button_arrow-right.svg);
   position: absolute;
   left: -50px;
   top: -6px;
