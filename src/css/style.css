@@ -325,6 +325,7 @@ header .header__wrapper .header__button button {
 }
 .steps {
   margin-top: 334px;
+  margin-bottom: 100px;
 }
 .steps .steps__title {
   font-family: "Red Hat Text";
@@ -342,17 +343,20 @@ header .header__wrapper .header__button button {
   display: flex;
   justify-content: space-between;
 }
-.steps .steps__cards .steps__item .steps__ico {
+.steps .steps__cards .steps__item .steps__item-link {
+  text-decoration: none;
+}
+.steps .steps__cards .steps__item .steps__item-link .steps__ico {
   display: block;
   margin: 0 auto 30px;
 }
-.steps .steps__cards .steps__item .ico-fix {
+.steps .steps__cards .steps__item .steps__item-link .ico-fix {
   margin-bottom: 22px;
 }
-.steps .steps__cards .steps__item .steps__ico-mob {
+.steps .steps__cards .steps__item .steps__item-link .steps__ico-mob {
   display: none;
 }
-.steps .steps__cards .steps__item .steps__text {
+.steps .steps__cards .steps__item .steps__item-link .steps__text {
   font-family: "Aleo";
   font-style: normal;
   font-weight: 400;
@@ -361,7 +365,7 @@ header .header__wrapper .header__button button {
   color: rgb(13, 96, 111);
   text-align: center;
 }
-.steps .steps__cards .steps__item:first-child {
+.steps .steps__cards .steps__item .steps__item-link:first-child {
   margin-right: 45px;
 }
 

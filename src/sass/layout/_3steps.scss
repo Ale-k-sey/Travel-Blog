@@ -1,5 +1,6 @@
 .steps{
     margin-top: 334px;
+    margin-bottom: 100px;
     .steps__title{
         font-family: 'Red Hat Text';
         font-style: normal;
@@ -18,31 +19,36 @@
         max-width: 1177px;
         display: flex;
         justify-content: space-between;
-        .steps__item{            
-           .steps__ico{
-                display: block;
-                margin: 0 auto 30px;
-           } 
-           .ico-fix{
-            margin-bottom: 22px;
-           }
-           .steps__ico-mob{
-            display: none;
-           }
-           .steps__text{
-                font-family: 'Aleo';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 20px;
-                line-height: 24px;
-
-                color: $color-secondary;
-
-                text-align: center;
-           }
-           &:first-child{
-            margin-right: 45px;
-           }
+        .steps__item{ 
+            .steps__item-link{
+                text-decoration: none;
+                
+                .steps__ico{
+                    display: block;
+                    margin: 0 auto 30px;
+               } 
+               .ico-fix{
+                margin-bottom: 22px;
+               }
+               .steps__ico-mob{
+                display: none;
+               }
+               .steps__text{
+                    font-family: 'Aleo';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 24px;
+    
+                    color: $color-secondary;
+    
+                    text-align: center;
+               }
+               &:first-child{
+                margin-right: 45px;
+               }
+            }           
+           
         //    &:last-child{
         //     margin-left: 160px;
         //    }
