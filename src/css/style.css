@@ -316,6 +316,9 @@ header .header__wrapper .header__button button {
   }
   .tripplan .tripplan__block .tripplan__search .form-button {
     padding: 7.5px 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .tripplan .tripplan__block .tripplan__search .form-button .form-link {
     font-weight: 500;
@@ -343,6 +346,9 @@ header .header__wrapper .header__button button {
   display: flex;
   justify-content: space-between;
 }
+.steps .steps__cards .steps__item {
+  width: 330px;
+}
 .steps .steps__cards .steps__item .steps__item-link {
   text-decoration: none;
 }
@@ -365,24 +371,28 @@ header .header__wrapper .header__button button {
   color: rgb(13, 96, 111);
   text-align: center;
 }
-.steps .steps__cards .steps__item .steps__item-link:first-child {
-  margin-right: 45px;
-}
 
 @media screen and (max-width: 390px) {
   .steps {
-    margin-top: 81px;
+    margin-top: 100px;
   }
   .steps .steps__title {
     font-size: 14px;
     line-height: 19px;
     margin-bottom: 20px;
   }
+  .steps .steps__cards {
+    display: flex;
+    justify-content: space-between;
+  }
   .steps .steps__cards .steps__item {
     max-width: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .steps .steps__cards .steps__item .steps__item-link {
+    margin-right: 0;
   }
   .steps .steps__cards .steps__item .steps__ico {
     display: none;

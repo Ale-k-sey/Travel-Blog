@@ -96,6 +96,9 @@
                 }
                 .form-button{
                     padding: 7.5px 9px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     .form-link{
                         font-weight: 500;
                         font-size: 11px;

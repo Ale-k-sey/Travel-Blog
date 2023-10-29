@@ -34,7 +34,7 @@ const createRigthlImg = () => {
 }
 
 const createLeftlImg = () => {
-    console.log('createLeftlImg')
+    // console.log('createLeftlImg')
     let numLeftImg = numActivImg - 1;
     if (numLeftImg <0) {
         numLeftImg = images.length - 1;
@@ -74,9 +74,15 @@ createLeftlImg();
 
 Next.onclick = nextClick;
 Prew.onclick = prevClick;
-// Center.onclick = () => {
-    
-// }
+Center.onclick = () => {
+    numActivImg = 0;
+    document.querySelector('.destinations__carousel img').remove();
+    document.querySelector('.destinations__carousel img').remove();
+    document.querySelector('.destinations__carousel img').remove();
+    createCentralImg();
+    createRigthlImg();
+    createLeftlImg();
+}
 
 // ====================================
 // Modal Window

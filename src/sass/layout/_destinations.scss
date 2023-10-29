@@ -139,6 +139,7 @@
             left: 50%;
             transform: translateX(-50%);
             .control__circle{
+                
                 margin-top: 0;
                 margin-bottom: 0;
     
@@ -147,10 +148,13 @@
     
                 border-radius: 50%;                
                 background: rgba(242, 120, 92, 0.5);
+
+                
             }
             .circle__center{
                 margin-left: 10px;
                 margin-right: 10px;
+                
             }
         }
         .destinations-button{
