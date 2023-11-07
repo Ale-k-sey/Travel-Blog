@@ -375,6 +375,7 @@ header .header__wrapper .header__button button {
 @media screen and (max-width: 390px) {
   .steps {
     margin-top: 100px;
+    margin-bottom: 10px;
   }
   .steps .steps__title {
     font-size: 14px;
@@ -389,17 +390,20 @@ header .header__wrapper .header__button button {
     max-width: 100px;
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
   .steps .steps__cards .steps__item .steps__item-link {
     margin-right: 0;
   }
-  .steps .steps__cards .steps__item .steps__ico {
+  .steps .steps__cards .steps__item .steps__item-link .steps__ico {
     display: none;
   }
-  .steps .steps__cards .steps__item .steps__ico-mob {
+  .steps .steps__cards .steps__item .steps__item-link .steps__ico-mob {
     display: block;
+    margin: 0 auto;
     margin-bottom: 19px;
+  }
+  .steps .steps__cards .steps__item .steps__item-link .steps__text {
+    font-size: 10px;
   }
   .steps .steps__cards .steps__item .ico-fix {
     margin-bottom: 22px;
@@ -518,6 +522,7 @@ header .header__wrapper .header__button button {
     position: absolute;
     top: 50%;
     transform: translate(15px, -50%) rotate(-45deg);
+    cursor: pointer;
   }
   .destinations .destinations__carousel-mob .destinations__control-prev {
     width: 30px;
@@ -530,6 +535,7 @@ header .header__wrapper .header__button button {
     position: absolute;
     top: 50%;
     transform: translate(305px, -50%) rotate(135deg);
+    cursor: pointer;
   }
   .destinations .destinations__control {
     display: flex;
