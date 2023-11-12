@@ -122,12 +122,12 @@ const prevClick = () => {
 // mob
 const prevClickMob = () => {
     console.log('click prev');
-    // numActivImg--;
-    // if(numActivImg < 0) {
-    //     numActivImg = images.length - 1;
-    // }
-    // document.querySelector('.destinations__carousel-mob img:last-child').remove();
-    // createLeftImgMob();
+    numActivImg--;
+    if(numActivImg < 0) {
+        numActivImg = images.length - 1;
+    }
+    document.querySelector('.destinations__carousel-mob img:last-child').remove();
+    createLeftImgMob();
     
 }
 
@@ -153,10 +153,9 @@ createCentralImgMob();
 createRigthImgMob();
 createLeftImgMob();
 
-document.querySelector('.destinations__control-next').onclick = () => {
-    console.log('next mob click')
-}
+
 prevMob.ontouchstart = prevClickMob;
+nextMob.ontouchstart = nextClickMob;
 
 // ====================================
 // Modal Window
